@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./_css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="_css/form.css">
+    <title>Tudo sobre Google Glass</title>
+</head>
+<body>
+    <div id="interface">
+      <header id="cabecalho">  <!-- começa o cabeçalho -->
+        <hgroup>  <!-- agrupamento de titulos -->
+          <h1>Google Glass</h1>
+          <h2>A revolução do Google está chegando</h2>
+       </hgroup>
+          <img id="icone" src="./_imagens/glass-oculos-preto-peq.png" alt="glass-oculos-preto-peq">
+       <nav id="menu">
+          <h1>Menu Principal</h1>
+          <ul>
+            <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+            <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+            <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+            <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+            <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>               
+         </ul>
+      </nav>
+    </header>
+    <section id="corpo-full">
+      <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+          <hgroup>
+            <h3>Fale Conosco > Contato</h3>
+            <h1>Formulário de Contato</h1>
+            <h2>por Alan Vitor</h2>
+            <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+          </hgroup>
+        </header>
+      </article>
+      <form action="">
+        <fieldset id="usuario">
+          <div class="campo1">
+          <h1>Identificação do Usuário</h1>
+          <label for="name"><strong>Nome:</strong></label>
+          <input type="text" name="name" id="name" required><br>
+          <label for="password"><strong>Senha:</strong></label>
+          <input type="password" name="password" id="password" required><br>
+          <label for="email"><strong>E-mail:</strong></label>
+          <input type="email" name="email" id="email"><br>
+          <label><strong>Sexo:</strong></label>
+          <select name="selecione" id="selecione"><br>
+            <option value="selecione">Masculino</option>
+            <option value="selecione">Feminino</option>
+          </select><br>
+            <label for="data-de-nacimento"><strong>Data de Nascimento:</strong></label>
+            <input type="date" name="data-de-nacimento" id="datadenacimento" required>
+        </div>
+        </fieldset>
+        <fieldset id="endereco">
+          <div class="campo2">
+            <h1>Endereço do Usuário</h1>
+            <label for="endereco" id="endereco"><strong>Logradouro:</strong></label>
+            <input type="text" name="endereco" id="endereco" placeholder="Nome da rua" required><br>
+            <label for="numero"><strong>Número:</strong></label>
+            <input type="text" name="numero" id="numero" placeholder="Número da casa" required><br>
+            <label for=""><strong>Estado:</strong></label>
+            <input type="text" name="estado" id="estado" placeholder="Por exemplo São Paulo" required><br>
+            <label for=""><strong>Cidade:</strong></label>
+            <input type="text" name="cidade" id="cidade" placeholder="Por exemplo Santo André" required>
+          </div>
+        </fieldset>
+        <fieldset id="mensagem">
+          <div class="campo3">
+            <h1>Mensagem do Usuário</h1>
+            <label for=""><strong>Grau de Urgência:</strong></label>
+            <select name="selecione" id="selecione">
+              <option value="selecione">1</option>
+              <option value="selecione">2</option>
+              <option value="selecione">3</option>
+              <option value="selecione">4</option>
+              <option value="selecione">5</option>
+            </select><br>
+            <label for="mensagem"><strong>Mensagem:</strong></label><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Deixe aqui a sua mensagem" size="1000" maxlength="10000"></textarea>
+          </div>
+        </fieldset>
+        <fieldset id="pedido">
+          <div class="campo4">
+            <h2>Quero um Google Glass</h2>
+            <h3>Gostaria de adquirir um Google Glass quando disponível</h3>
+            <label for="cor"><strong>Cor:</strong></label>
+            <input type="color" name="cor" id="cor"><br>
+            <label selected disabled for=""><strong>Quantidade:</strong></label>
+            <select name="selecione" id="selecione">
+              <option selected disabled value="">1</option>
+              <option selected disabled value="">2</option>
+              <option selected disabled value="">3</option>
+              <option selected disabled value="">4</option>
+              <option selected disabled value="">5</option>
+            </select>
+            <h4>Preço Total: 2,800.00</h4>
+          </div>
+        </fieldset>
+        <button type="submit" class="botao">enviar</button>
+      </form>
+      </section>
+       <footer id="rodape">
+      <p>Copyright 2021 - by Alan Vitor <br/>
+      <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> | 
+      <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
+      </footer>
+    </div>
+    <script src="faleconosco.js"></script>
+</body>
+</html>

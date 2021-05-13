@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+fieldset#usuario {
+    margin: 20px;
+    background: #0000005d;
+}
+
+fieldset#endereco {
+    margin: 20px;
+    background: #0000005d;
+}
+
+fieldset#mensagem {
+    margin: 20px;
+    background: #0000005d;
+}
+
+fieldset#pedido {
+    margin: 20px;
+    background: #0000005d;
+}
+
+div.campo1 {
+    margin: 10px;
+}
+
+
+div.campo2 {
+    margin: 10px;
+}
+
+
+div.campo3 {
+    margin: 10px;
+}
+
+div.campo4 {
+    margin: 10px;
+}
+
+div {
+    font-family: "Poppins", sans-serif;
+}
+
+.botao {
+    background: #000000;
+    color: #ffffff;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+    margin-left: 50%;
+}
